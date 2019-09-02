@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    text-align: center;
+}
+.mainbox {
+    width: 100%;
+    max-width: 640px;
+    box-shadow: 0 0 20px rgba(0, 0, 0,0.2);
+    padding: 2em;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.mainbox aside {
+    width: 150px;
+}
+.detail {
+    width: 100%;
+    margin-left: 30px;
+}
+
+.detail h3, 
+.detail p {
+    margin: 0;
+}
+.detail hr {
+    border: none;
+    background-color: lightgrey;
+    height: 1px;
+}
+.dayindicator {
+    float: right;
+    background-color: #ace;
+    padding: 10px;
+    font-size: .8rem;
+}
+.daysleft {
+    display: block;
+    text-align: center;
+    font-size: 2.3rem;
+    line-height: 1.1;
+    font-weight: bold;
+}
+
+.stats, .actions, .actionbar {
+    list-style: none;
+    padding: 0;
+}
+.stats li span {
+    display: inline-block;
+    background-color: peachpuff;
+    margin-left: 1px;
+    margin-bottom: 1px;
+    width: 90px;
+    padding: 5px;
+}
+.stats li span.stm,
+.stats li span.acd,
+.stats li span.mny {
+    width: 50px;
+    text-align: right;
+}
+
+
+.actions li, .actionbar li {
+    display: inline-block;
+}
+.actionbar li {
+    height: 3px;
+    background-color: sandybrown;
+    width: 30px;
+    margin-right: 2;
+}
+.actions a {
+    display: block;
+    padding: 8px 20px;
+    background-color:#ace;
+    margin: 0 2px 0 0;
+    text-decoration: none;
+    color: slategray;
+    font-weight: bold;
+    font-size: .8rem;
+}
+.actions a:hover {
+    background-color: royalblue;
+    color: white;
+}
+.actions li.hidden {
+    display: none;
+}

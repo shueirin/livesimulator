@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Well Yeah</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section class="sectbox">
+        <div class="sidebar">
+            <div class="box"></div>
+            <h3 class="mood">Hello</h3>
+            <p>
+                Stamina: <span class="staminastat">999</span><br />
+                Money: <span class="moneystat">5000</span><br />
+                Academy: <span class="academystat">10</span>
+            </p>
+        </div>
+        <div class="mainbody">
+            <div class="resultbox disabled">
+                <h3 class="finalmsgtitle">Congratulations!</h3>
+                <p class="finalmsgbody">You have succeeded!</p>
+                <a href="#" class="resetgame">Reset Game</a>
+            </div>
+            <div class="actionbox">
+                <h2>Subject A</h2>
+                <div class="actionbar">
+                    <ul>
+                        <li id="act1"></li>
+                        <li id="act2"></li>
+                        <li id="act3"></li>
+                        <li id="act4"></li>
+                        <li id="act5"></li>
+                    </ul>
+                </div>
+                <p>Days Left: <span class="daycounter">7</span></p>
+                <ul>
+                    <li class="action"><a href="#" id="eatbtn" class="actbtn">Eat</a></li>
+                    <li class="action"><a href="#" id="workbtn" class="actbtn">Work</a></li>
+                    <li class="action"><a href="#" id="studybtn" class="actbtn">Study</a></li>
+                    <li class="action"><a href="#" id="sleepbtn" class="actbtn disabled">Sleep</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="sectbox loop">
+
+        <div class="statusbox">
+            Status: End Loop <br />
+            <a class="resetloop" href="#">reset loop</a>
+        </div>
+        <p>State of The Day: Eat = <span class="eatcount">0</span> | Work = <span class="workcount">0</span> | Play = <span class="playcount">0</span></p>
+        <p>Days Left: <span class="daycounter">10</span></p>
+        <p><small>Rules: You can only press sleep, after 'Eat', 'Work', and 'Play'</small></p>
+        <p>
+            <a href="#" id="eatbtn" class="btn">Eat</a>
+            <a href="#" id="workbtn" class="btn">Work</a>
+            <a href="#" id="playbtn" class="btn">Play</a>
+            <a href="#" id="sleepbtn" class="btn disabled">Sleep</a>
+        </p>
+
+
+
+    </section>
+
+    
+    <section class="sectbox prs">
+        <div>
+            <p>Score Board:  CPU = <span class="cpuscore">999</span> | Player = <span class="playerscore">999</span> | draw = <span class="drawcount">999</span></p>
+            <h3 class="stattitle">Statistic:</h3>
+            <div class="statboard">
+                <p class="CPUstat">
+                    CPU Scissors = <span class="cpuscissors">999</span><br />
+                    CPU Paper = <span class="cpupaper">999</span><br />
+                    CPU Rock = <span class="cpurock">999</span><br />
+                </p>
+                <p class="PlayerStat">
+                    Player Scissors = <span class="pscissors">999</span><br />
+                    Player Paper = <span class="ppaper">999</span><br />
+                    Player Rock = <span class="prock">999</span><br />
+                </p>
+            </div>
+        </div>
+        <div class="theresult">
+            <h3 class="resulttext">You WIN!</h3>
+        </div>
+        <div class="thering">
+            <h1 class="cpuReady">CPU throws: <span class="cpuhand">Scissors</span>!</h1>
+            <p>vs</p>
+            <h1 class="youReady">You throws: <span class="yourhand">Rock</span>!</h1>
+        </div>
+        <div class="theform">
+            <form>
+                <select class="yourPickedHand" id="yourPickedHand" name="yourPickedHand">
+                    <option value="">- Pick your choice</option>
+                    <option value="Scissors">Scissors</option>
+                    <option value="Rock">Rock</option>
+                    <option value="Paper">Paper</option>
+                </select> <br />
+                <a href="#" class="submitMyHand" >Submit</a> | <a href="#" class="resetGame">Reset Game</a>
+            </form>
+        </div>
+    </section>
+    <section class="sectbox">
+        <div class="sidebar">
+            <img src="https://picsum.photos/200" alt="placeholder" />
+            <h1 class="maintitle">Hey Ya</h1>
+            <a id="hitme" href="#">Click Here Yea!</a>
+        </div>
+        <div class="mainbody">
+            <p>Mood:</p>
+            <p class="mood"></p>
+            <hr />
+            <p>Saying:</p>
+            <p class="word"></p>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

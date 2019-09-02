@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+.box {
+    display: block;
+    width: 200px;
+    height: 200px;
+    background-color: #ccc;
+}
+
+.sectbox {
+    width: 80%;
+    max-width: 800px;
+    box-shadow: 0 0 20px rgba(0, 0, 0,0.2);
+    padding: 2em;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+   
+}
+.sidebar {
+    border: 1px solid black;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.mainbody {
+    margin-left: 40px;
+    display:flex;
+    flex-direction: column;
+}
+.sectbox.prs  {
+    flex-direction: column;
+}
+
+.sectbox.loop {
+    display: block;
+    flex-direction: unset;
+}
+
+.sectbox.prs div {
+    text-align: center;
+}
+.thescore h2 {
+    margin: 0;
+}
+.thering h1{
+    margin: 0;
+}
+.theform {
+    text-align: center;    
+}
+.stattitle{
+    margin-bottom: 0;
+}
+.statboard {
+    display: flex;
+    flex-direction: row;
+}
+.CPUstat, .PlayerStat {
+  flex-basis: calc(50% - 20px);
+  text-align: right;
+  margin-right: 15%;
+  font-size: 80%;
+}
+.statusbox {
+    border: 1px solid black;
+    padding: 20px;
+    width: 200px;
+    float: right;
+    display: none;
+}
+.btn {
+    display: block;
+    text-decoration: none;
+    background-color: cadetblue;
+    color: black;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: aquamarine;
+    margin: 5px;
+    display: inline-block;
+}
+.btn.disabled, .actbtn.disabled {
+  pointer-events: none;
+  cursor: default;
+  opacity: .6;
+}
+.btn:hover, .btn:focus {
+    opacity: .8;
+    color: white;
+}
+
+.resultbox {
+    display: block;
+    border: 1px solid black;
+    text-align: center;
+    padding:  20px;
+}
+.resultbox.disabled {
+    display: none;
+}
+.resultbox h3, .resultbox p {
+    margin: 0;
+}
+
+.actionbox ul {
+    list-style: none;
+    margin:0;
+    padding: 0;
+}
+.action {
+    margin-bottom: 4px;
+}
+.actbtn {
+    display: block;
+    padding: 5px 20px;
+    border: 1px solid black;
+    text-decoration: none;
+}
+.actbtn:hover {
+    background-color: black;
+    color: white;
+}
+.actionbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.actionbar li {
+    display: inline-block;
+    height: 3px;
+    width: 30px;
+    background-color: orange;
+    margin-right: 2px;
+}
+.actionbar li.disabled {
+    background-color: grey;
+}
+
+.main {
+    width: 100%;
+    margin-left: 30px;
+}
+
+.main .actionbar {
+    margin-bottom: 40px;
+}
+.main .actionbar li {
+    margin-right: 2px;
+}
+
+.hidden {
+    display: none;
+}
+.apleft {
+    margin-right: 20px;
+}
